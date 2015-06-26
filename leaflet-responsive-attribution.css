@@ -1,1 +1,45 @@
+.leaflet-container .leaflet-control-attribution {
+  padding: 2px 6px;
+  background: rgba(255, 255, 255, 0.9);
+  }
+  
+.leaflet-container .leaflet-control-attribution.leaflet-compact-attribution {
+  width: auto !important;
+  margin: 10px 40px 0 10px;
+  padding: 5px 7px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.9);
+  visibility: hidden;
+  }
+  
+.leaflet-compact-attribution-label:after {
+  font-family: 'FontAwesome';
+  content: '\f05a';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  line-height: 26px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  visibility: visible;
+  }
+  
+.leaflet-compact-attribution-toggle, .leaflet-compact-attribution-label {
+  display: none;
+  }
+  
+.leaflet-compact-attribution ~ .leaflet-compact-attribution-label {
+  display: block;
+  }
 
+.leaflet-compact-attribution-toggle:checked ~ .leaflet-control-attribution.leaflet-compact-attribution {
+  visibility: visible;
+  }
